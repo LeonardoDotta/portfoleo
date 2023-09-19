@@ -1,0 +1,237 @@
+.container {
+    margin: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content : center;
+    height: auto;
+}
+
+.divider {
+    font-size: 25px;
+}
+
+.min-height {
+    min-height: 75%;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.social_medias {
+    padding-bottom: 45px;
+}
+
+.p_home {
+    padding-bottom: 45px;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+
+.casamento_e_deusdete {
+    width: 20vw;
+    height: auto;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.imgs {
+    height: auto;
+}
+
+.div_form {
+    margin: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_rate_and_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_home {
+    background-color: rgb(61, 71, 211);
+}
+
+.div_buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    max-width: 475px;
+}
+
+.div_imagem {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.layout {
+    padding: 24px;
+}
+
+.content {
+    padding: 0 50px;
+}
+
+.sider {
+    width: 200px;
+}
+
+@media (max-width: 800px) {
+
+    .layout {
+        padding: 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .divider {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .sider {
+        display: none;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .div_imagem {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .ajuste {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+
+    .casamento_e_deusdete {
+        width: auto;
+        height: auto;
+        margin: auto;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+    
+}
+
+/* @media (min-width: 540px), (max-width: 800px) {
+
+    .casamento_e_deusdete {
+        width: 40vw;
+        height: auto;
+        margin: auto;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+
+} */
+
+@media (min-width: 575px) {
+
+    .ratings {
+        padding-left: 60px;
+    }
+
+}
+
+/* Barra lateral mobile */
+
+.opened_sidebar_mobile {
+    position: absolute;
+    height: max-content;
+    background-color: lightgray;
+    z-index: 1;
+}
+
+.closed_sidebar_mobile {
+    height: 0;
+}
+
+.menu_btn {
+    font-size: 25px;
+    background-color: aliceblue;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.categories_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.categorie_btn {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    min-width: 130px;
+    min-height: 40px;
+    background-color: aliceblue;
+    border-color: aliceblue;
+    border-radius: 5px;
+}
+
+.children_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    max-width: 95px;
+}
+
+.child_btn {
+    margin-bottom: 10px;
+    background-color: white;
+    border-color: aliceblue;
+    border-radius: 5px;
+    min-height: 40px;
+    min-width: 100px
+}
+
+@media (min-width: 800px) {
+
+    .opened_sidebar_mobile {
+        display: none;
+    }
+
+    .closed_sidebar_mobile {
+        display: none;
+    }
+    
+}
