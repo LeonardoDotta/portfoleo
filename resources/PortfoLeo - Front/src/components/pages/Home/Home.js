@@ -17,13 +17,13 @@ function Home() {
     const onFinish = (values) => {
         console.log('Success:', values);
 
-        // sendRating(
-        //     {
-        //         'name': values.username,
-        //         'rating': value
+        sendRating(
+            {
+                'name': values.username,
+                'rating': value
 
-        //     }
-        // )
+            }
+        )
 
         setMostrar(!mostrar)
 
@@ -34,17 +34,17 @@ function Home() {
 
     const [value, setValue] = useState(3)
 
-    //   const [clicou, setClicou] = useState(false)
+    const [clicou, setClicou] = useState(false)
 
-    //   const [cumprimentar, setCumprimentar] = useState('')
+    const [cumprimentar, setCumprimentar] = useState('')
 
-    //   useEffect(() => {
-    //     if(clicou){
-    //         setTimeout(() => {
-    //             setCumprimentar('hi, Leonardo');
-    //         }, 3000)
-    //     }
-    //     }, [clicou])
+    useEffect(() => {
+        if (clicou) {
+            setTimeout(() => {
+                setCumprimentar('hi, Leonardo');
+            }, 3000)
+        }
+    }, [clicou])
 
     useEffect(() => {
         loadRatings()
@@ -78,25 +78,25 @@ function Home() {
                         </div>
                     </Container>
                 </div>
-                {/* <div>
-            {
-                clicou ?
-                    null
-                :
-                    <button onClick={() => setClicou(true)}>
-                        Click to say hi
-                    </button>
-            }
-            {cumprimentar}
-        </div> */}
+                <div>
+                    {
+                        clicou ?
+                            null
+                            :
+                            <button onClick={() => setClicou(true)}>
+                                Click to say hi
+                            </button>
+                    }
+                    {cumprimentar}
+                </div>
             </div>
             <div className='div_form'>
                 {
-                        mostrar == true ?
+                    mostrar == true ?
                         'Thanks for rating!'
                         :
-                        'Please, rate my website!'   
-                    }
+                        'Please, rate my website!'
+                }
                 <Form
                     name="basic"
                     labelCol={{
@@ -115,7 +115,7 @@ function Home() {
                     onFinishFailed={onFinishFailed}
                     autoComplete="off"
                 >
-                    
+
                     <Form.Item
                         label="Username"
                         name="username"
