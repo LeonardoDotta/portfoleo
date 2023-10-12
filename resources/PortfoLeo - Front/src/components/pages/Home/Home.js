@@ -78,7 +78,7 @@ function Home() {
                         </div>
                     </Container>
                 </div>
-                <div>
+                {/* <div>
                     {
                         clicou ?
                             null
@@ -88,7 +88,7 @@ function Home() {
                             </button>
                     }
                     {cumprimentar}
-                </div>
+                </div> */}
             </div>
             <div className='div_form'>
                 {
