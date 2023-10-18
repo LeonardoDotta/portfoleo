@@ -13,6 +13,7 @@ function get_manifest_variable($asset_name)
     <head>
     <script defer="defer" src="<?php echo get_manifest_variable("main.js"); ?>"></script>
         <meta charset="utf-8">
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script>window.appUrl = '{{ env('APP_URL') }}'</script>
