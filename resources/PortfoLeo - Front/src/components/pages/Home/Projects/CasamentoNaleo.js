@@ -55,7 +55,7 @@ function CasamentoNaleo() {
             max={5}
             value={slide}
           >
-            <LeftOutlined />
+            <LeftOutlined style={{verticalAlign:"middle"}}/>
           </Button>
           <Button
             type="primary"
