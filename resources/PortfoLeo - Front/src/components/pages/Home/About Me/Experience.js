@@ -20,7 +20,7 @@ function Experience () {
                     the Special Civil Court in the district of my city, working on behalf of the population 
                     in opening cases that could resolve their disputes.
                     Currently, I started my studies in Systems Analysis and Development and work 
-                    on my own projects using React (JavaScript language), together with Git, producing websites 
+                    on my own projects using React (JavaScript, python), together with Git, Laravel producing websites 
                     for various purposes. In addition, I use HTML and CSS to increase the utilities 
                     of the applications I develop.
                     </p>
